@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Abel&family=Josefin+Sans:wght@600&family=Silkscreen&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="principal.css">
+    <title>Telecall</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="imagens/logo.png" alt="">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="perfil.php">perfil</a></li>
+                <li><a href="#vantagens">vantagens</a></li>
+                <li><a href="#2FA">2FA</a></li>
+                <li><a href="#usuarios">Quem usa?</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial">Contact</a></li>
+                <li><a id="adminButton" onclick="redirectToAdminPage()">ADM</a></li>
+                <li><a class="night" href="#"><input type="checkbox" class="checkbox" id="chk"/>
+                        <label class="label" for="chk">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                            <div class="ball"></div>
+                        </label></a></li>
+                <li><div class="d-flex">
+                    <a href="deslogar.php" class="btn btn-danger me-5">Sair</a>
+                </div></li>
+            </ul>
+        </div>
+        <div class="menu-mobile">
+            <ul>
+                <li><a href="modelagem.html">Modelo BD</a></li>
+                <li><a href="#vantagens">vantagens</a></li>
+                <li><a href="#2FA">2FA</a></li>
+                <li><a id="adminButton" onclick="redirectToAdminPage()">ADM</a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial">Contact</a></li>
+            </ul>
+        </div>
+        <div class="btn-mobile">
+            <ion-icon name="grid-outline"></ion-icon>
+        </div>
+    </header>
+
+    <div class="containerPai1">
+        <div class="container1">
+            <h1>CPaaS: O que é?</h1>
+            <h3>Communications Platform as a Service</h3>
+            <h3>Plataforma de Comunicação como Serviço</h3>
+            <p>É uma solução de software de comunicação que atua
+                como uma base sobre a qual desenvolvedores podem
+                integrar uma variedade de aplicativos.
+                Métodos de comunicação típicos, como voz, chamadas
+                de vídeo ou mensagens de texto SMS, podem ser
+                incorporados em outros sistemas por meio de APIs que
+                se conectam à plataforma CPaaS.
+                Essas APIs permitem que as empresas expandam suas
+                ofertas sem a necessidade de hardware ou software
+                adicional.</p>
+        </div>
+        <div class="container2">
+            <img src="imagens/img1.png" alt="">
+        </div>
+    </div>
+
+    <div class="containerPai2">
+        <div class="container3">
+            <p>O CPaaS, com sua <span>escalabilidade,
+
+                    flexibilidade, autenticação e segurança</span>
+
+                aprimoradas, está <span>revolucionando</span><br><br>
+                o modo como as empresas habilitadas em nuvem implementam
+
+                <span>comunicações de voz, SMS e vídeo.</span>
+            </p>
+        </div>
+    </div>
+
+    <div class="containerPai3">
+        <div class="container4">
+            <img src="imagens/CPaaSinf.png" alt="">
+        </div>
+        <div class="container5">
+            <h1>CPaaS e a Transformação Digital</h1>
+
+            <p><span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span> Expectativa de crescimento estimado de
+                $ 8,2 bilhões em 2021</p>
+
+            <p><span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span> 85% dos profissionais se conectam de
+                maneira diferente com colegas e clientes do que
+                faziam há apenas 5 anos.</p>
+
+            <p><span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span> As receitas de CPaaS estão crescendo mais de
+                40%ao ano.</p>
+
+            <p><span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span> CPaaS já ultrapassou o mercado de UCaaS
+                (Unified Communication as a Service).</p>
+
+            <p><span class="material-symbols-outlined">
+                    arrow_right_alt
+                </span> Marcas que estão em múltiplos canais
+                melhoram a experiência do usuário e aumentam
+                seus resultados.</p>
+
+        </div>
+    </div>
+
+    <div class="titulo1">
+        <h1>Usos</h1>
+    </div>
+
+    <div class="containerPai4">
+        <div class="container6">
+            <img src="imagens/caixa.png" alt="">
+            <h3>Logística</h3>
+            <p>Acesso seguro com 2FA.
+                <br>
+                Uso de números mascarados
+                para proteção de funcionário
+                e cliente.
+                <br>
+                Mantenha o cliente
+                informado sobre entrega e
+                <br>
+                serviços.
+                Verified calling para
+                confirmação de entregas.
+            </p>
+        </div>
+
+        <div class="container7">
+            <img src="imagens/seguro.png" alt="">
+            <h3>Varejo</h3>
+            <p>Compra segura com 2FA.
+                <br>
+                Avisos sobre compras e
+                entregas.
+                <br>
+                Upsell com novas ofertas e
+                vantagens via SMS ou
+                Verified Calling.
+            </p>
+        </div>
+
+        <div class="container8">
+            <img src="imagens/atendente.png" alt="">
+            <h3>Call Center</h3>
+            <p>Melhore taxas de abertura
+                utilizando alertas SMS para
+                confirmações.
+                <br>
+                Economia de números com o
+                uso de um único número
+                máscara por todos os agentes.
+                <br>
+                Verified Calling para
+                confirmação de
+                agendamentos.
+            </p>
+        </div>
+
+        <div class="container9">
+            <img src="imagens/batimento.png" alt="">
+            <h3>Saúde</h3>
+            <p>Acesso seguro com 2FA.
+                <br>
+                Melhore o agendamento e
+                reduza faltas com lembretes por
+                SMS.
+                <br>
+                Tokens de autorização para
+                procedimentos com 2FA.
+                Verified Calling para avisos de
+                resultados e agendamentos.
+            </p>
+        </div>
+    </div>
+
+    <div class="titulo">
+        <h1>Exemplos</h1>
+    </div>
+
+    <div class="containerPai11">
+        <div class="coluna">
+            <div class="bloco">
+                <div class="area">
+                    <p>Cliente fez um
+                        agendamento no site</p><br>
+                    <p>Enviado e-mail
+                        de confirmação</p>
+                    <img src="imagens/datesms.png" alt="">
+                </div>
+            </div>
+
+            <div class="bloco">
+                <div class="area">
+                    <p>Data de instalação
+                        se aproxima.</p><br>
+                    <p>Mensagem de voz e SMS são
+                        enviadas pro telefone do cliente.</p>
+                    <img src="imagens/date.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="coluna2">
+            <div class="bloco">
+                <div class="area">
+                    <p>Cliente acessa sua conta.</p><br>
+                    <p>Código PIN é enviado
+                        via SMS.</p>
+                    <img src="imagens/telapin.png" alt="">
+                </div>
+            </div>
+            <div class="bloco">
+                <div class="area">
+                    <p>Atualização no envio
+                        de uma compra.</p><br>
+                    <p>Atualização enviada pro cliente
+                        via e-mail e SMS</p>
+                    <img src="imagens/imgtela.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="titulo">
+        <h1>Vantagens Telecall</h1>
+    </div>
+
+    <div id="vantagens"></div>
+    <div class="containerPai5">
+
+        <div class="container10">
+            <p>Confiança</p>
+            <p>Agilidade</p>
+            <p>Garantia de Rede</p>
+            <p>Suporte ao Cliente</p>
+            <p>Preço</p>
+        </div>
+        <div class="container11">
+            <p>Empresa que já conhecem e confiam;</p>
+            <p>Aplicativos de rápida implementação</p>
+            <p>Rede própria de alta capacidade e controle total de ponta-a-ponta;</p>
+            <p>Representantes locais de vendas e suporte;</p>
+            <p>Melhor custo benefício para um conjunto completo de recursos e serviços;</p>
+        </div>
+    </div>
+
+    <div id="Solucoes"></div>
+
+    <div class="titulo1">
+        <h1>Soluções</h1>
+    </div>
+    <div class="containerPai6">
+        <div class="container12">
+            <img src="imagens/iconcadeado.png" alt="">
+            <h3>2FA</h3>
+
+        </div>
+
+        <div class="container13">
+            <img src="imagens/iconcel.png" alt="">
+            <h3>Numero Mascarado</h3>
+        </div>
+
+        <div class="container14">
+            <img src="imagens/iconcorreto.png" alt="">
+            <h3>Google Verified Calls</h3>
+        </div>
+
+        <div class="container15">
+            <img src="imagens/iconsms.png" alt="">
+            <h3>SMS Programável</h3>
+        </div>
+    </div>
+
+    <div id="2FA"></div>
+    <div class="containerPai7">
+        <div class="container16">
+            <h1>2FA</h1>
+            <h3>Two-Factor Authentication</h3>
+            <h3>Autenticação de dois fatores</h3>
+            <p>O 2FA é um procedimento de segurança que garante que serão
+                necessários 2 fatores únicos para liberação de uma ação. O
+                primeiro fator é a senha que o usuário e o segundo pode ser
+                autenticado via token, via detecção de impressão digital,
+                reconhecimento facial, código enviado via sms, entre outros.</p>
+            <br><br><br>
+            <h3>O 2FA permite que você:</h3>
+            <p>• Envie uma senha via SMS, voz ou e-mail para autenticação do usuá<br>
+                • Adicione uma camada extra de segurança além da senha<br>
+                • Ofereça maior segurança para usuários.</p>
+
+        </div>
+
+        <div class="container17">
+            <img src="imagens/icon2.png" alt="">
+            <img src="imagens/icon1.png" alt="">
+            <img src="imagens/icon3.png" alt="">
+        </div>
+    </div>
+
+    <div class="containerPai8">
+        <div class="container18">
+            <h1>2FA</h1><br>
+            <h2>Fortaleça a estratégia de segurança de seu negócio.</h2><br>
+            <p>Adicionar um número de telefone de recuperação a uma
+                conta individual pode bloquear até:</p><br><br>
+            <h3>
+                <span>100%</span> dos bots automatizados,
+            </h3><br><br>
+            <h3>
+                <span>99%</span> dos ataques de phishing em massa,
+            </h3><br><br>
+            <h3>
+                e <span>66%</span> dos ataques direcionados.
+            </h3><br><br>
+        </div>
+    </div>
+
+    <div class="titulo">
+        <h1>Como funciona?</h1>
+    </div>
+
+    <div class="containerPai12">
+        <div class="container26">
+            <img src="imagens/pcpin1.png" alt="imagem">
+            <h2>Usuário acessa seu site o
+                aplicativo e digita a senha
+                cadastrada para entrar em
+                seu perfil ou completar uma
+                transação.<h2>
+        </div>
+
+        <div class="container27">
+            <img src="imagens/iconlocation1.png" alt="imagem">
+            <h2>A Telecall recebe a tentativa
+                de login e solicita que o
+                usuário insira seu número de
+                telefone para autorizar o
+                acesso.<h2>
+        </div>
+
+        <div class="container28">
+            <img src="imagens/cell1.png" alt="imagem">
+            <h2>Após inserir seu número, a
+                Telecall envia para o usuário
+                por SMS, chamada ou e-mail
+                um código PIN de uso único. <br><br>
+                Esse código PIN é também
+                conhecido como OTP (One
+                Time Password).<h2>
+        </div>
+
+        <div class="container29">
+            <img src="imagens/pccode1.png" alt="imagem">
+            <h2>O usuário insere o código no
+                site ou aplicativo para
+                concluir o processo de
+                verificação.<h2>
+        </div>
+    </div>
+
+    <div class="containerPai9">
+        <div class="container19">
+            <h1>Beneficios</h1>
+            <p>• Ofereça <span>segurança aprimorada</span> para seus clientes.</p>
+            <p>• Reduza casos de <span>fraude e invasões</span> e evite o acesso a dados por invasores.</p>
+            <p>• Envio de OTP por meio de <span>vários canais</span>, incluindo SMS, voz ou e-mail.</p>
+            <p>• <span>Flexibilidade</span> de canais garante que o usuário conseguirá completar a tarefa desejada
+                mesmo quando tiver problema com um deles. Exemplo: Enviar OTP por SMS, em caso de
+                falha, enviar OTP por chamada de voz, em caso de outra falha, enviar por e-mail.
+            </p>
+            <p>• API simples e de <span>rápida implementação.</span></p>
+            <p>• <span>Plataforma intuitiva</span> que permite visualizar relatórios de uso por dia, mês ou ano e
+                pesquisar usando diversos critérios de filtro.
+            </p>
+        </div>
+    </div>
+
+    <div id="usuarios"></div>
+
+    <div class="titulo">
+        <h1>Quem usa?</h1>
+    </div>
+    <div class="containerPai10">
+        <div class="container20">
+            <img src="imagens/caixa.png" alt="">
+            <h2>Logística</h2>
+            <img id="img" src="imagens/ifood.png" alt="">
+            <img id="img" src="imagens/rappi.png" alt="">
+            <img id="img" src="imagens/uber.png" alt="">
+        </div>
+
+        <div class="container21">
+            <img src="imagens/financa.png" alt="">
+            <h2>Finanças</h2>
+            <img id="img" src="imagens/bradesco.png" alt="">
+            <img id="img" src="imagens/picpay.png" alt="">
+            <img id="img" src="imagens/mercadopago.png" alt="">
+        </div>
+
+        <div class="container22">
+            <img src="imagens/seguro.png" alt="">
+            <h2>Varejo</h2>
+            <img id="img" src="imagens/amazon.png" alt="">
+            <img id="img" src="imagens/appstore.png" alt="">
+            <img id="img" src="imagens/mercadolivre.png" alt="">
+        </div>
+
+        <div class="container23">
+            <img src="imagens/aviao.png" alt="">
+            <h2>Turismo</h2>
+            <img id="img" src="imagens/airbnb.png" alt="">
+            <img id="img" src="imagens/booking.png" alt="">
+            <img id="img" src="imagens/png.png" alt="">
+        </div>
+
+        <div class="container24">
+            <img src="imagens/batimento.png" alt="">
+            <h2>Saúde</h2>
+            <img id="img" src="imagens/png.png" alt="">
+            <img id="img" src="imagens/amil.png" alt="">
+            <img id="img" src="imagens/png.png" alt="">
+        </div>
+
+        <div class="container25">
+            <img src="imagens/governo.png" alt="">
+            <h2>Governo</h2>
+            <img id="img" src="imagens/carteira.png" alt="">
+            <img id="img" src="imagens/receita.png" alt="">
+            <img id="img" src="imagens/png.png" alt="">
+        </div>
+    </div>
+
+    <footer>
+        <div id="rodape">
+            <div id="contatos">
+                <img src="imagens/logo.png" alt="logo">
+                <p>Nos acompanhe nas redes sociais para mais informações.</p>
+
+                <div id="redesocial">
+                    <a href="https://www.instagram.com/telecallbr/" class="link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/TelecallBr/?locale=pt_BR" class="link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://api.whatsapp.com/send?phone=552130301010&text=%23Comercial" class="link"
+                        id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="seinscreva">
+                <h3>inscreva-se</h3>
+
+                <p>
+                    Nos mande seu email para enviarmos mais novidades.
+                </p>
+
+                <div id="inputemail">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="copyright">
+            &#169
+            2023 all rights reserved
+        </div>
+    </footer>
+    
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn-mobile").click(function () {
+                $(".menu-mobile").slideToggle("slow")
+            })
+        })
+    </script>
+
+</body>
+
+</html>

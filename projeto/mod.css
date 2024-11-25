@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 150vh;
+    background-color:rgb(255, 255, 255);
+    background-image: url(imagens/login.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    align-items: center;
+}
+
+header .logo {
+    width: 50%;
+}
+
+header .logo img {
+    width: 150px;
+}
+
+a{
+    color:#498bc8;
+    font-family: 'Silkscreen', cursive;
+    text-decoration: none;
+}
